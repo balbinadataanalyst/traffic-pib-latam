@@ -1,23 +1,30 @@
-# Análisis de Correlación: Tráfico vs PIB en LATAM
+# Proyectos de Análisis de Datos - Balbina
 
-## 🚦 Problema de Negocio
-¿Las ciudades con mayor PIB sufren más congestión? Este proyecto analiza la relación entre el nivel económico y el tráfico en las 10 ciudades más congestionadas de LATAM.
+## 1. Análisis de Correlación: Tráfico vs PIB en LATAM
+**Problema:** ¿Las ciudades con mayor PIB sufren más congestión?
+**Fuente:** TomTom Traffic Index 2023, Banco Mundial
+**Ciudades:** CDMX, Bogotá, Lima, Santiago, etc.
 
-## 📊 Datos
-- Fuente: TomTom Traffic Index 2023, Banco Mundial
-- Ciudades: CDMX, Bogotá, Lima, Santiago, etc.
-- Variables: % de congestión, PIB per cápita, horas perdidas al año
+## 2. Proyecto 6 - ConnectaTel (NUEVO - Sprint 7)
+**Objetivo:** Analizar y segmentar a los usuarios de ConnectaTel por edad y nivel de uso.
 
-## 🔍 Hallazgos Principales
-- Correlación de 0.78 entre PIB per cápita y nivel de congestión
-- CDMX pierde 152 horas al año por tráfico
-- Las ciudades con mejor transporte público tienen 23% menos congestión
+**Datasets:**
+- user_profile con ~3800 usuarios
+- Columnas: llamadas, mensajes, edad
 
-## 🛠️ Herramientas
-Python, Pandas, Matplotlib, Seaborn, Análisis de Correlación
+**Etapas realizadas:**
+1. Limpieza de datos: tratamiento de nulos y duplicados
+2. EDA y detección de outliers en duración de llamadas
+3. Creación de segmentos: grupo_uso (Bajo, Medio, Alto) y grupo_edad (Joven, Adulto, Adulto Mayor)
+4. Visualización con countplot y boxplot
+5. Insight ejecutivo
 
-## 📈 Visualización
-[Próximamente gráficos]
+**Hallazgo Principal:**
+El 78% de los usuarios son de Uso Medio y la mayoría son Adultos (30-59). La base es estable pero dependiente de un solo perfil. Recomendación: Crear plan Premium para migrar a Alto uso y plan Redes para captar jóvenes.
 
----
-👩‍💻 Analista: Balbina | Data Analyst LATAM
+**Cómo ejecutar:**
+- Abrir `S7 Version-Estudiante-Project-ConnectaTel.ipynb` en Google Colab
+- Ejecutar todas las celdas
+
+## Tecnologías
+Python, Pandas, Seaborn, Matplotlib, GitHub
